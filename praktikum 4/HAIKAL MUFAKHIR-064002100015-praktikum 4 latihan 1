@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov  6 03:48:53 2021
+
+@author: Haikal mufakhir
+"""
+
+x =int(input("masukan angka : "))
+
+while x > 0:
+    for i in range(x):
+        print(x, end='')
+    print()
+    x -= 1
