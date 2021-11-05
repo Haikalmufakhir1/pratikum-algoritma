@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov  6 02:58:06 2021
+
+@author: Haikal mufakhir
+"""
+from math import ceil, atan2, cos, sin, sqrt, radians
+print("====================================================================")
+print("soal latihan 2")
+print("Latihan2_Praktikum2")
+print("Buatlah program untuk menghitung jarak antara dua titik di permukaan bumi menggunakan rumus dan fungsi trigonometri pada package math pada python.")
+print("====================================================================")
+
+lat2 = int(input("Latitude 2 : "))
+lon1 = int(input("Longitude 1 : "))
+lon2 = int(input("Longitude 2 : "))
+lat1 = int(input("Latitude 1 : "))
+print("\n")
+print("------------------------------------------------------")
+
+lat1, lat2, lon1, lon2 = map(radians, [lat1, lat2, lon1, lon2])
+dlon = lon2 - lon1
+dlat = lat2 - lat1
+a = sin(dlat/2)*2 + cos(lat1) * cos(lat2) * sin(dlon/2)*2
+c = 2 * atan2(sqrt(a), sqrt(1-a))
+r = 6371
+d = c*r
+
+print(f"Jarak antara dua titik adalah {ceil(d)} km")
+print("keterangan : sudah di bulatkan")
+print("------------------------------------------------------")
