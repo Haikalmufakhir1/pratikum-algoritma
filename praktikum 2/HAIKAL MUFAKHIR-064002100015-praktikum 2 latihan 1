@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov  6 02:41:03 2021
+
+@author: Haikal mufakhir
+"""
+
+import math
+
+a = float(input("Masukan nilai a : "))
+b = float(input("Masukan nilai b : "))
+
+hasil = a + b
+print("Jumlah a ditambah b adalah",hasil)
+
+hasil = a - b
+print("Selisih antara a dan b adalah",abs(hasil))
+
+hasil = a * b
+print("Jumlah a dikali b adalah",hasil)
+
+hasil = a % b
+print("Jumlah sisa pembagian a dan b",hasil)
+
+hasil = a / b
+print("Jumlah pembagian a dan b",hasil)
+
+hasil = math.log10(a)
+print("Jumlah log a",hasil)
+
+hasil = a ** b
+print("Jumlah dari a pangkat b",hasil)
