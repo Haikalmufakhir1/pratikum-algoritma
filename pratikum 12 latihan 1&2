@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec 19 21:51:49 2021
+
+@author: Haikal mufakhir
+nama : haikal mufakir
+nim : 064002100015
+"""
+
+
+import pandas as pd
+
+
+df = pd.read_csv("Negara.csv")
+
+mean = df.groupby(["Benua"]).mean()
+std = df.groupby(["Benua"]).std()
+
+print("Berikut Data Framenya: ")
+print(df)
+print("")
+print("Berikut Data Mean: ")
+print(mean)
+print("")
+print("Berikut Data Standard Deviation: ")
+print(std)
+print(""  )
