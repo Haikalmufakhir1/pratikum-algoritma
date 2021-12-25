@@ -1,0 +1,23 @@
+from IPython.display import Image, display
+
+ulang = "y"
+while ulang == "y" or ulang == "Y" :
+    ans = input("ketik L untuk buah - buahan dan P untuk benda ")
+    if ans =="L" or ans == '1' :
+        ans = input("gamabar buah apa ini ? ")
+        if ans == "Y" or ans =="y" :
+            print("ini pisang")
+            display(Image(filename="pisang.jpg" ))
+        else :
+            print("ini mangga")
+            display(Image(filename="mangga.jpg" ))
+            
+    else :
+       ans= input("gambar benda apa ini? ")
+       if ans == "Y" or ans =="y":
+          print("Ini Meja")
+          display(Image(filename="meja.jpg" ))
+       else :
+           print("Ini kursi" )
+           display(Image(filename="kursi.jpg" ))
+    ulang = input("Tebak Lagi" )
